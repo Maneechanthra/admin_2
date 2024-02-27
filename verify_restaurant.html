@@ -1,0 +1,262 @@
+<span style="font-family: verdana, geneva, sans-serif"
+  ><!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <title>ยืนยันตัวตนร้านอาหาร</title>
+      <link rel="stylesheet" href="style.css" />
+      <!-- Font Awesome Cdn Link -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      />
+    </head>
+    <style>
+      label {
+        margin-left: 20px;
+        font-weight: bold;
+      }
+      select {
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+    </style>
+
+    <body>
+      <div class="container">
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html" class="logo">
+                <img src="/img/logo.png" />
+                <span class="nav-item">FMR</span>
+              </a>
+            </li>
+            <li>
+              <a href="dashboard.html">
+                <i class="fas fa-menorah"></i>
+                <span class="nav-item">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="report_restaurant.html">
+                <i class="fas fa-flag"></i>
+                <span class="nav-item">รายงานความไม่เหมาะสม</span>
+              </a>
+            </li>
+            <li>
+              <a href="user.html">
+                <i class="fas fa-chart-bar"></i>
+                <span class="nav-item">รายงานสมาชิก</span>
+              </a>
+            </li>
+            <li>
+              <a href="show_restaurant.html">
+                <i class="fas fa-chart-bar"></i>
+                <span class="nav-item">รายงานข้อมูลร้านอาหาร</span>
+              </a>
+            </li>
+            <li>
+              <a href="restaurant_management_.html">
+                <i class="fas fa-utensils"></i>
+                <span class="nav-item">จัดการข้อมูลร้านอาหาร</span>
+              </a>
+            </li>
+            <li>
+              <a href="verify_restaurant.html">
+                <i class="fas fa-utensils"></i>
+                <span class="nav-item">จัดการข้อมูลยืนยันตัวตน</span>
+              </a>
+            </li>
+            <li>
+              <a href="user_,management.html">
+                <i class="fas fa-user"></i>
+                <span class="nav-item">จัดการข้อมูลสมาชิก</span>
+              </a>
+            </li>
+            <li>
+              <a href="admin_,management.html">
+                <i class="fas fa-user"></i>
+                <span class="nav-item">จัดการข้อมูลผู้ดูแลระบบ</span>
+              </a>
+            </li>
+            <li>
+              <a href="edit_personal.html">
+                <i class="fas fa-edit"></i>
+                <span class="nav-item">แก้ไขข้อมูลส่วนตัว</span>
+              </a>
+            </li>
+            <li>
+              <a href="login.html" class="logout">
+                <i class="fas fa-sign-out-alt"></i>
+                <span class="nav-item">Log out</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <section class="main">
+          <div class="main-top">
+            <h1>จัดการข้อมูลยืนยันตัวตนร้านอาหาร</h1>
+            <i class="fas fa-user-cog"></i>
+          </div>
+
+          <section class="attendance">
+            <div class="attendance-list">
+              <h1>ข้อมูลขอยืนยันตัวตนร้านอาหาร</h1>
+              <!-- <input class="inputSearch" type="text" placeholder="ค้นหา..." />
+              <button class="btn_search">ค้นหา</button>
+
+              <label style="margin-left: 20" for="dog-names"
+                >ประเภทร้านอาหาร:</label
+              >
+              <select name="dog-names" id="dog-names">
+                <option value="reeses">ทุกประเภท</option>
+                <option value="rigatoni">อาหารตามสั่ง</option>
+                <option value="dave">อาหารจีน</option>
+                <option value="dave">อาหารทะเล</option>
+                <option value="pumpernickel">คาเฟ่</option>
+              </select> -->
+
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>ลำดับ</th>
+                    <th>ชื่อร้าน</th>
+                    <th>ประเภทร้านอาหาร</th>
+                    <th>ชื่อ-นามกุล ผู้ขอยืนยันตัวตนร้านอาหาร</th>
+                    <th>หลักฐานการยืนยันตัวตน</th>
+                    <th>สถานะ</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>ร้านแม่หยา</td>
+                    <td>อาหารตามสั่ง , อาหารจีน</td>
+                    <td>นายสุเมธ มณีจันทรา</td>
+                    <td>
+                      <img src="img/03.jpg" alt="รูปภาพที่ 3" width="100" />
+                    </td>
+                    <td>รออนุมัติ</td>
+                    <td class="button-container">
+                      <button
+                        style="
+                          color: rgb(255, 255, 255);
+                          background-color: rgb(0, 81, 255);
+                          border-color: rgb(255, 255, 255);
+                          padding: 10px 20px;
+                          border-radius: 10px;
+                          width: 100px;
+                        "
+                        onmouseover="this.style.backgroundColor='rgb(0, 60, 200)';"
+                        onmouseout="this.style.backgroundColor='rgb(0, 81, 255)';"
+                      >
+                        อนุมัติ
+                      </button>
+                      <button
+                        style="
+                          color: rgb(255, 255, 255);
+                          background-color: brown;
+                          border-color: rgb(255, 255, 255);
+                          padding: 10px 20px;
+                          border-radius: 10px;
+                          width: 100px;
+                        "
+                        onmouseover="this.style.backgroundColor='maroon';"
+                        onmouseout="this.style.backgroundColor='brown';"
+                      >
+                        ไม่อนุมัติ
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>02</td>
+                    <td>ท่าบ่อปลาเผา</td>
+                    <td>อาหารตามสั่ง , อาหารทะเล</td>
+                    <td>นายจิตติพัฒน์ ศรีสุทัศน์</td>
+                    <td>
+                      <img src="img/02.jpg" alt="รูปภาพที่ 3" width="100" />
+                    </td>
+                    <td>รออนุมัติ</td>
+                    <td class="button-container">
+                      <button
+                        style="
+                          color: rgb(255, 255, 255);
+                          background-color: rgb(0, 81, 255);
+                          border-color: rgb(255, 255, 255);
+                          padding: 10px 20px;
+                          border-radius: 10px;
+                          width: 100px;
+                        "
+                        onmouseover="this.style.backgroundColor='rgb(0, 60, 200)';"
+                        onmouseout="this.style.backgroundColor='rgb(0, 81, 255)';"
+                      >
+                        อนุมัติ
+                      </button>
+                      <button
+                        style="
+                          color: rgb(255, 255, 255);
+                          background-color: brown;
+                          border-color: rgb(255, 255, 255);
+                          padding: 10px 20px;
+                          border-radius: 10px;
+                          width: 100px;
+                        "
+                        onmouseover="this.style.backgroundColor='maroon';"
+                        onmouseout="this.style.backgroundColor='brown';"
+                      >
+                        ไม่อนุมัติ
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>03</td>
+                    <td>PaMaHeng The Eatery พามาเฮง</td>
+                    <td>อาหารตามสั่ง , คาเฟ่</td>
+                    <td>นายธรรมนูญ เหมือนสิงห์</td>
+                    <td>
+                      <img src="img/01.jpg" alt="รูปภาพที่ 3" width="100" />
+                    </td>
+                    <td>รออนุมัติ</td>
+                    <td class="button-container">
+                      <button
+                        style="
+                          color: rgb(255, 255, 255);
+                          background-color: rgb(0, 81, 255);
+                          border-color: rgb(255, 255, 255);
+                          padding: 10px 20px;
+                          border-radius: 10px;
+                          width: 100px;
+                        "
+                        onmouseover="this.style.backgroundColor='rgb(0, 60, 200)';"
+                        onmouseout="this.style.backgroundColor='rgb(0, 81, 255)';"
+                      >
+                        อนุมัติ
+                      </button>
+                      <button
+                        style="
+                          color: rgb(255, 255, 255);
+                          background-color: brown;
+                          border-color: rgb(255, 255, 255);
+                          padding: 10px 20px;
+                          border-radius: 10px;
+                          width: 100px;
+                        "
+                        onmouseover="this.style.backgroundColor='maroon';"
+                        onmouseout="this.style.backgroundColor='brown';"
+                      >
+                        ไม่อนุมัติ
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </section>
+      </div>
+    </body>
+  </html>
+</span>
